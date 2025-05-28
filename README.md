@@ -1,0 +1,2 @@
+# MLIP_GCMC_MD
+AIMD + MLIP MD 
