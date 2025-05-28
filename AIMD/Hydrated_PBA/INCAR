@@ -1,0 +1,56 @@
+SYSTEM = R-PW_training
+
+# ab initio
+GGA = PS #PBEsol
+ISTART = 0        ! Start job: "begin from scratch".
+ICHARG = 2        ! Take superposition of atomic charge densities.
+LORBIT = 11       ! PAW method.
+NCORE = 32
+ENMAX = 900       !
+EDIFF = 1E-6
+ISMEAR = 0        ! Gaussian smearing
+SIGMA  = 0.1      ! smearing in eV
+LREAL  = Auto     ! projection operators in real space
+LWAVE  = F
+LCHARG = F
+
+ALGO   = Fast     ! RMM-DIIS for electronic relaxation
+PREC   = Normal   ! precision
+ISYM   = 0        ! no symmetry imposed
+
+# magnetic
+ISPIN = 2   #spin polarized
+MAGMOM = 48*0.0 8*5.0 8*0.0 48*0.0 16*0.0 4*0.0 8*0.0
+
+# DFT+U
+LDAU = .TRUE.
+LDAUTYPE  = 2
+LDAUL = 0  2  2  0  0  0  0 
+LDAUU = 0  5.5  5.5  0  0  0  0
+LDAUPRINT = 0     ! No onsite occupancy matrix is written to the OUTCAR file.
+LMAXMIX   = 4     ! 4 for d electrons
+NELM = 100
+# MD
+IBRION = 0        ! MD (treat ionic degrees of freedom)
+NSW    = 10000    ! no of ionic steps
+POTIM  = 0.4      ! MD time step in fs
+
+# The NPT ensemble
+MDALGO = 3                ! Langevin thermostat
+LANGEVIN_GAMMA   = 1  1  1  1  1  1  1 ! friction
+LANGEVIN_GAMMA_L = 10  10  10  10  10  10  10 ! lattice friction
+ISIF   = 3        ! update positions, cell shape and volume
+RANDOM_SEED =         688344966                0                0
+TEBEG  = 200      ! temperature at beginning
+TEEND  = 400      ! temperature at end
+APACO = 5
+KBLOCK  = 10
+NBLOCK  = 100
+# machine learning
+ML_LMLFF  = .TRUE.
+ML_MODE = TRAIN
+#ML_CDOUB = 4
+#ML_MCONF_NEW = 10
+#ML_MODE = TRAIN
+#ML_MB = 10000
+ML_CTIFOR = 0.002

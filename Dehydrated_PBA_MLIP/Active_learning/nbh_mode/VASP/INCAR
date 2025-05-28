@@ -1,0 +1,36 @@
+SYSTEM = R-PW_training
+
+# ab initio
+GGA = PS #PBEsol
+ISTART = 0        ! Start job: "begin from scratch".
+ICHARG = 2        ! Take superposition of atomic charge densities.
+LORBIT = 11       ! PAW method.
+NCORE = 40
+ENMAX = 700       !
+EDIFF = 1E-6
+ISMEAR = 0        ! Gaussian smearing
+SIGMA  = 0.1      ! smearing in eV
+LREAL  = Auto     ! projection operators in real space
+LWAVE  = F
+LCHARG = F
+
+ALGO   = Fast     ! RMM-DIIS for electronic relaxation
+PREC   = Normal   ! precision
+ISYM   = 0        ! no symmetry imposed
+
+# magnetic
+ISPIN = 2   #spin polarized
+MAGMOM = *0 *5 *0 *0 *0
+
+# DFT+U
+LDAU = .TRUE.
+LDAUTYPE  = 2
+LDAUL = 0  2  2  0  0
+LDAUU = 0  5.5  5.5  0  0
+LDAUPRINT = 0     ! No onsite occupancy matrix is written to the OUTCAR file.
+LMAXMIX   = 4     ! 4 for d electrons
+NELM = 300
+
+# MD
+IBRION = -1       ! No ionic move
+NSW    = 0        ! no of ionic steps

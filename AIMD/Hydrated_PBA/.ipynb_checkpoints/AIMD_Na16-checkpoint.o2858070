@@ -1,0 +1,208 @@
+current POSCAR: POSCAR_h2o_12_0
+ running  192 mpi-ranks, with    1 threads/rank, on    3 nodes
+ distrk:  each k-point on  192 cores,    1 groups
+ distr:  one band on   32 cores,    6 groups
+ vasp.6.4.2 20Jul23 (build Jun 10 2024 18:01:08) gamma-only                     
+  
+ POSCAR found type information on POSCAR C MnFeN NaO H 
+ POSCAR found :  7 types and     164 ions
+ Reading from existing POTCAR
+ -----------------------------------------------------------------------------
+|                                                                             |
+|     EEEEEEE  RRRRRR   RRRRRR   OOOOOOO  RRRRRR      ###     ###     ###     |
+|     E        R     R  R     R  O     O  R     R     ###     ###     ###     |
+|     E        R     R  R     R  O     O  R     R     ###     ###     ###     |
+|     EEEEE    RRRRRR   RRRRRR   O     O  RRRRRR       #       #       #      |
+|     E        R   R    R   R    O     O  R   R                               |
+|     E        R    R   R    R   O     O  R    R      ###     ###     ###     |
+|     EEEEEEE  R     R  R     R  OOOOOOO  R     R     ###     ###     ###     |
+|                                                                             |
+|     Error reading item MAGMOM from file INCAR.                              |
+|     Error code was IERR= 5 ... .                                            |
+|                                                                             |
+|       ---->  I REFUSE TO CONTINUE WITH THIS SICK JOB ... BYE!!! <----       |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+current POSCAR: POSCAR_h2o_12_1
+ running  192 mpi-ranks, with    1 threads/rank, on    3 nodes
+ distrk:  each k-point on  192 cores,    1 groups
+ distr:  one band on   32 cores,    6 groups
+ vasp.6.4.2 20Jul23 (build Jun 10 2024 18:01:08) gamma-only                     
+  
+ POSCAR found type information on POSCAR C MnFeN NaO H 
+ POSCAR found :  7 types and     164 ions
+ Reading from existing POTCAR
+ -----------------------------------------------------------------------------
+|                                                                             |
+|     EEEEEEE  RRRRRR   RRRRRR   OOOOOOO  RRRRRR      ###     ###     ###     |
+|     E        R     R  R     R  O     O  R     R     ###     ###     ###     |
+|     E        R     R  R     R  O     O  R     R     ###     ###     ###     |
+|     EEEEE    RRRRRR   RRRRRR   O     O  RRRRRR       #       #       #      |
+|     E        R   R    R   R    O     O  R   R                               |
+|     E        R    R   R    R   O     O  R    R      ###     ###     ###     |
+|     EEEEEEE  R     R  R     R  OOOOOOO  R     R     ###     ###     ###     |
+|                                                                             |
+|     Error reading item MAGMOM from file INCAR.                              |
+|     Error code was IERR= 5 ... .                                            |
+|                                                                             |
+|       ---->  I REFUSE TO CONTINUE WITH THIS SICK JOB ... BYE!!! <----       |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+current POSCAR: POSCAR_h2o_12_2
+ running  192 mpi-ranks, with    1 threads/rank, on    3 nodes
+ distrk:  each k-point on  192 cores,    1 groups
+ distr:  one band on   32 cores,    6 groups
+ vasp.6.4.2 20Jul23 (build Jun 10 2024 18:01:08) gamma-only                     
+  
+ POSCAR found type information on POSCAR C MnFeN NaO H 
+ POSCAR found :  7 types and     164 ions
+ Reading from existing POTCAR
+ -----------------------------------------------------------------------------
+|                                                                             |
+|     EEEEEEE  RRRRRR   RRRRRR   OOOOOOO  RRRRRR      ###     ###     ###     |
+|     E        R     R  R     R  O     O  R     R     ###     ###     ###     |
+|     E        R     R  R     R  O     O  R     R     ###     ###     ###     |
+|     EEEEE    RRRRRR   RRRRRR   O     O  RRRRRR       #       #       #      |
+|     E        R   R    R   R    O     O  R   R                               |
+|     E        R    R   R    R   O     O  R    R      ###     ###     ###     |
+|     EEEEEEE  R     R  R     R  OOOOOOO  R     R     ###     ###     ###     |
+|                                                                             |
+|     Error reading item MAGMOM from file INCAR.                              |
+|     Error code was IERR= 5 ... .                                            |
+|                                                                             |
+|       ---->  I REFUSE TO CONTINUE WITH THIS SICK JOB ... BYE!!! <----       |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+current POSCAR: POSCAR_h2o_12_3
+ running  192 mpi-ranks, with    1 threads/rank, on    3 nodes
+ distrk:  each k-point on  192 cores,    1 groups
+ distr:  one band on   32 cores,    6 groups
+ vasp.6.4.2 20Jul23 (build Jun 10 2024 18:01:08) gamma-only                     
+  
+ POSCAR found type information on POSCAR C MnFeN NaO H 
+ POSCAR found :  7 types and     164 ions
+ Reading from existing POTCAR
+ -----------------------------------------------------------------------------
+|                                                                             |
+|     EEEEEEE  RRRRRR   RRRRRR   OOOOOOO  RRRRRR      ###     ###     ###     |
+|     E        R     R  R     R  O     O  R     R     ###     ###     ###     |
+|     E        R     R  R     R  O     O  R     R     ###     ###     ###     |
+|     EEEEE    RRRRRR   RRRRRR   O     O  RRRRRR       #       #       #      |
+|     E        R   R    R   R    O     O  R   R                               |
+|     E        R    R   R    R   O     O  R    R      ###     ###     ###     |
+|     EEEEEEE  R     R  R     R  OOOOOOO  R     R     ###     ###     ###     |
+|                                                                             |
+|     Error reading item MAGMOM from file INCAR.                              |
+|     Error code was IERR= 5 ... .                                            |
+|                                                                             |
+|       ---->  I REFUSE TO CONTINUE WITH THIS SICK JOB ... BYE!!! <----       |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+current POSCAR: POSCAR_h2o_8_0
+ running  192 mpi-ranks, with    1 threads/rank, on    3 nodes
+ distrk:  each k-point on  192 cores,    1 groups
+ distr:  one band on   32 cores,    6 groups
+ vasp.6.4.2 20Jul23 (build Jun 10 2024 18:01:08) gamma-only                     
+  
+ POSCAR found type information on POSCAR C MnFeN NaO H 
+ POSCAR found :  7 types and     152 ions
+ Reading from existing POTCAR
+ -----------------------------------------------------------------------------
+|                                                                             |
+|     EEEEEEE  RRRRRR   RRRRRR   OOOOOOO  RRRRRR      ###     ###     ###     |
+|     E        R     R  R     R  O     O  R     R     ###     ###     ###     |
+|     E        R     R  R     R  O     O  R     R     ###     ###     ###     |
+|     EEEEE    RRRRRR   RRRRRR   O     O  RRRRRR       #       #       #      |
+|     E        R   R    R   R    O     O  R   R                               |
+|     E        R    R   R    R   O     O  R    R      ###     ###     ###     |
+|     EEEEEEE  R     R  R     R  OOOOOOO  R     R     ###     ###     ###     |
+|                                                                             |
+|     Error reading item MAGMOM from file INCAR.                              |
+|     Error code was IERR= 5 ... .                                            |
+|                                                                             |
+|       ---->  I REFUSE TO CONTINUE WITH THIS SICK JOB ... BYE!!! <----       |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+current POSCAR: POSCAR_h2o_8_1
+ running  192 mpi-ranks, with    1 threads/rank, on    3 nodes
+ distrk:  each k-point on  192 cores,    1 groups
+ distr:  one band on   32 cores,    6 groups
+ vasp.6.4.2 20Jul23 (build Jun 10 2024 18:01:08) gamma-only                     
+  
+ POSCAR found type information on POSCAR C MnFeN NaO H 
+ POSCAR found :  7 types and     152 ions
+ Reading from existing POTCAR
+ -----------------------------------------------------------------------------
+|                                                                             |
+|     EEEEEEE  RRRRRR   RRRRRR   OOOOOOO  RRRRRR      ###     ###     ###     |
+|     E        R     R  R     R  O     O  R     R     ###     ###     ###     |
+|     E        R     R  R     R  O     O  R     R     ###     ###     ###     |
+|     EEEEE    RRRRRR   RRRRRR   O     O  RRRRRR       #       #       #      |
+|     E        R   R    R   R    O     O  R   R                               |
+|     E        R    R   R    R   O     O  R    R      ###     ###     ###     |
+|     EEEEEEE  R     R  R     R  OOOOOOO  R     R     ###     ###     ###     |
+|                                                                             |
+|     Error reading item MAGMOM from file INCAR.                              |
+|     Error code was IERR= 5 ... .                                            |
+|                                                                             |
+|       ---->  I REFUSE TO CONTINUE WITH THIS SICK JOB ... BYE!!! <----       |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+current POSCAR: POSCAR_h2o_8_2
+ running  192 mpi-ranks, with    1 threads/rank, on    3 nodes
+ distrk:  each k-point on  192 cores,    1 groups
+ distr:  one band on   32 cores,    6 groups
+ vasp.6.4.2 20Jul23 (build Jun 10 2024 18:01:08) gamma-only                     
+  
+ POSCAR found type information on POSCAR C MnFeN NaO H 
+ POSCAR found :  7 types and     152 ions
+ Reading from existing POTCAR
+ -----------------------------------------------------------------------------
+|                                                                             |
+|     EEEEEEE  RRRRRR   RRRRRR   OOOOOOO  RRRRRR      ###     ###     ###     |
+|     E        R     R  R     R  O     O  R     R     ###     ###     ###     |
+|     E        R     R  R     R  O     O  R     R     ###     ###     ###     |
+|     EEEEE    RRRRRR   RRRRRR   O     O  RRRRRR       #       #       #      |
+|     E        R   R    R   R    O     O  R   R                               |
+|     E        R    R   R    R   O     O  R    R      ###     ###     ###     |
+|     EEEEEEE  R     R  R     R  OOOOOOO  R     R     ###     ###     ###     |
+|                                                                             |
+|     Error reading item MAGMOM from file INCAR.                              |
+|     Error code was IERR= 5 ... .                                            |
+|                                                                             |
+|       ---->  I REFUSE TO CONTINUE WITH THIS SICK JOB ... BYE!!! <----       |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+current POSCAR: POSCAR_h2o_8_3
+ running  192 mpi-ranks, with    1 threads/rank, on    3 nodes
+ distrk:  each k-point on  192 cores,    1 groups
+ distr:  one band on   32 cores,    6 groups
+ vasp.6.4.2 20Jul23 (build Jun 10 2024 18:01:08) gamma-only                     
+  
+ POSCAR found type information on POSCAR C MnFeN NaO H 
+ POSCAR found :  7 types and     152 ions
+ Reading from existing POTCAR
+ -----------------------------------------------------------------------------
+|                                                                             |
+|     EEEEEEE  RRRRRR   RRRRRR   OOOOOOO  RRRRRR      ###     ###     ###     |
+|     E        R     R  R     R  O     O  R     R     ###     ###     ###     |
+|     E        R     R  R     R  O     O  R     R     ###     ###     ###     |
+|     EEEEE    RRRRRR   RRRRRR   O     O  RRRRRR       #       #       #      |
+|     E        R   R    R   R    O     O  R   R                               |
+|     E        R    R   R    R   O     O  R    R      ###     ###     ###     |
+|     EEEEEEE  R     R  R     R  OOOOOOO  R     R     ###     ###     ###     |
+|                                                                             |
+|     Error reading item MAGMOM from file INCAR.                              |
+|     Error code was IERR= 5 ... .                                            |
+|                                                                             |
+|       ---->  I REFUSE TO CONTINUE WITH THIS SICK JOB ... BYE!!! <----       |
+|                                                                             |
+ -----------------------------------------------------------------------------
+

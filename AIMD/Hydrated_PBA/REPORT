@@ -1,0 +1,7 @@
+                MDALGO =   3
+        LANGEVIN_GAMMA =     1.000    1.000    1.000    1.000    1.000    1.000    1.000
+      LANGEVIN_GAMMA_L =    10.000
+               SCALING =       0
+                 CNEXP =     9.000   14.000
+                 PMASS =  1000.00000
+   LATTICE_CONSTRAINTS =   T T T (X,Y,Z) = 9 degree(s) of freedom

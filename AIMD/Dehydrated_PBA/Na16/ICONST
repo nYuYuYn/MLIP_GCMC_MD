@@ -1,0 +1,7 @@
+LR 1 7 #length of lattice vector #status = 7: the coordinate is monitored
+LR 2 7
+LR 3 7
+LA 2 3 7 #angle between lattice vectors
+LA 1 3 7
+LA 1 2 7
+LV 7 #cell volume

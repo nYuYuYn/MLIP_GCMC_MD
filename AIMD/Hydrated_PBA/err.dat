@@ -1,0 +1,12 @@
+# ERR ######################################################################
+# ERR This line contains the RMSEs of the predictions with respect to ab initio results for the training data.
+# ERR 
+# ERR nstep ......... MD time step or input structure counter
+# ERR rmse_energy ... RMSE of energies (eV atom^-1)
+# ERR rmse_force .... RMSE of forces (eV Angst^-1)
+# ERR rmse_stress ... RMSE of stress (kB)
+# ERR ######################################################################
+# ERR               nstep      rmse_energy       rmse_force      rmse_stress
+# ERR                   2                3                4                5
+# ERR ######################################################################
+ERR                     0   6.47181527E-04   7.03445760E-02   6.53265856E-01

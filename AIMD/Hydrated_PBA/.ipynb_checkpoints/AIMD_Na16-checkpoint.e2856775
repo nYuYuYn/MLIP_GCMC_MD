@@ -1,0 +1,1902 @@
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B4D925F2630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B4FF11FBB66  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B70D8785630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B733900E810  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AFF80928630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B01E0FFA48E  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AE4F2B67630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AE754FD69A5  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B593036D630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B5B8AECD02C  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B01631C2630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B03C500F9AE  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B70308B7630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B729101974E  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B552728E630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B5781E04ED2  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B5F26DC0630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B6188FF9E7D  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002BA7DF6C2630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002BAA410196AD  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B07A8985630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B0A090001ED  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B7074A55630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B72D4FD74F4  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AC60BE4E630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AC86CFFA468  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AD29BA23630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AD4FD018735  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B627A170630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B64D8FF97BA  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002BA3CE6C1630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002BA62D318B5D  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B34927B9630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B36F141C747  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AE8DF0F2630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AEB40FF9AA4  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AE75CC80630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AE9BD00F5E1  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B1FEDA98630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B224D00F323  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002BA7DF9C8630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002BAA4100839E  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002ADCC2A6C630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002ADF21614163  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B344FBD1630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B36B0FF802C  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B5BB4A50630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B5E150186FC  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B776E894630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B79CD3FDFA0  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B490A978630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B4B654D80E7  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AB8F8B73630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002ABB58FF987A  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B9E8FEB9630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002BA0F101942F  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AC50096F630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AC75B4E54A4  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B13C72DB630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B1628FF98DA  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002ACFEA22A630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AD244D8B986  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AD1F8AFC630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AD45900836C  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B48D60CF630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B4B34FFA637  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002ACBC21E2630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002ACE210192EA  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AD027047630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AD288FF9E40  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B79D1042630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B7C31001D09  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AB9DCE6E630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002ABC3D019584  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AFE6875D630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B00C901456C  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B6A3D67A630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B6C9D00F9CA  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B6EC80D5630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B712901014C  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B8B5F511630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B8DC10019D7  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002ADDC1674630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AE0210197A9  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B258E3F5630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B27ECFF80AA  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B7123F45630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B7384FFA079  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B7F2775D630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B8188FF9ABE  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B89800F2630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B8BE10198A2  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002BA568A15630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002BA7C8FD779D  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B1714349630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B197500836C  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B29B531F630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B2C14FF8038  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B4ADB6E8630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B4D3CFF9A0E  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002ADBE4A6C630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002ADE44FF9B26  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B3CDA8BE630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B3F3541E24D  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002ACEA1FF8630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AD100FF98DA  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B1D27522630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B1F89002460  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002ADB90233630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002ADDF10197CC  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B72424A3630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B74A111A7F9  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B1A783FE630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B1CD8FF9C0F  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002BA5B4B0C630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002BA8150155FD  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AACAC393630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AAF0CFF8044  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002BA195637630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002BA3F500F787  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AE0396F8630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AE298FF80AA  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B3CC7E72630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B3F2900F903  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AADC9044630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AB028FF9C8C  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AE19A7FB630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AE3F9413FAC  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AEBBF68A630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AEE20FF9B2C  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AF7500D0630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AF9AAC0EE4C  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002BA7DB819630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002BAA3CFF999A  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B7B41E83630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B7DA100F9F1  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B30E6404630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B3344FF8065  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002BAA921C9630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002BACF0FF98D4  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B57F0C6F630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B5A50FF983F  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B244E8E1630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B26AD4FB02C  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B70FAAF0630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B735D019337  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B5C84AA3630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B5EE50186FC  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AEFF2B08630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AF254FF80AA  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AD352203630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AD5B0FF99C0  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AF958893630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AFBB8FF973F  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B3AA14E4630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B3D00FF8065  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B9F78EBD630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002BA1D8FF90B9  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002ADA327F2630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002ADC9141D711  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AF1608D7630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AF3C100F9AE  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B0F95947630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B11F4FF9FA6  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B5373E2F630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B55D50097E8  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AD24989D630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AD4A8FF996D  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B0144243630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B039EDC370F  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AE2C2536630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AE5210FAE0F  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B3AC6EE1630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B3D21A580C6  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B959B27B630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B97F5DDDB0B  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B2D1EAF8630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B2F810100B9  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B8B43DD9630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B8DA4FD6634  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B33CD37C630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B362CFF8792  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B854C0A0630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B87AD01013E  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002BA41F032630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002BA68100FD80  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B76B635D630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B7914FF9B8D  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B7C26ADB630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B7E8564DA51  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B9007664630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B926901965E  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B5D2C169630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B5F8D00F6BD  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AD1E1502630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AD441015501  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AEF4AE02630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AF1ACFFA559  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B6322604630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B658121165A  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B8F6F57F630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B91D0FF802C  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AD5B9CA4630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AD818FF97AE  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B5A4B1F5630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B5CACFF9FE8  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AB203BF0630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AB464FF9A31  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B481366C630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B4A74FF8038  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B0BB7C32630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B0E1900E4CE  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B341D9D0630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B367CFF9C2B  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B474525D630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B49A500F5F5  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B8306ADE630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B856565D0DD  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B4485E41630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B46E09A2D78  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B07FD159630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B0A5D00FA12  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B76B704D630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B79190192A4  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AAB6ED42630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AADD0FD7808  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002ADDC21FE630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AE0210193AB  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AD41C9C4630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AD67753A498  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AEAABBC5630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AED0CFF809E  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002ACC9F0AE630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002ACF00FF9D31  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AD864D29630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002ADABF8993B8  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AC45794A630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AC6B8FD56C1  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AD0947A3630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AD2F50197A9  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B614454B630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B63A4FF4CEF  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AD78D86C630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AD9ECFFA355  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AE87BE5D630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AEADCFD7262  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B50F1DC5630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B5350FF9D3F  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B6DA81BF630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B7008FF80AA  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002ACF7821A630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AD1D8FF9E03  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AD0CA9F9630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002AD32960D4AB  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B6E8C4BB630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B70ED00E44C  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B9E779EA630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002BA0D2545E6C  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002ACAC2877630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002ACD21413C2B  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B37815F7630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B39E100839E  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B6C72FEE630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B6ECDB6F2D5  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B0A35886630  Unknown               Unknown  Unknown
+vasp_gam           000000000076A062  Unknown               Unknown  Unknown
+vasp_gam           000000000096552C  Unknown               Unknown  Unknown
+vasp_gam           000000000097C4F4  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B0A35DB7555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B7B1DB2D630  Unknown               Unknown  Unknown
+vasp_gam           000000000076A079  Unknown               Unknown  Unknown
+vasp_gam           0000000000964C67  Unknown               Unknown  Unknown
+vasp_gam           000000000097C4F4  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B7B1E05E555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B323286C630  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B348C899A69  mkl_blas_avx512_d     Unknown  Unknown
+libmkl_avx512.so   00002B348C73204C  mkl_blas_avx512_x     Unknown  Unknown
+libmkl_intel_thre  00002B3226EB34DA  mkl_blas_dgemv        Unknown  Unknown
+libmkl_intel_lp64  00002B3225F49B11  dgemv_                Unknown  Unknown
+vasp_gam           0000000000962BFA  Unknown               Unknown  Unknown
+vasp_gam           000000000097C51C  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B3232D9D555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AD3703D9630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AD36EF19BA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AD36EE9A6CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AD36EE7DCAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AD36EE5E55C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AD36EF2D4CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AD36EE457BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002AD36EA28924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002AD37090A555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B86FBD12630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B86FA852BA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B86FA7D36CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B86FA7B6CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B86FA79755C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B86FA8664CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B86FA77E7BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B86FA361924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B86FC243555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AF39DC3F630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AF39C77FBA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AF39C7006CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AF39C6E3CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AF39C6C455C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AF39C7934CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AF39C6AB7BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002AF39C28E924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002AF39E170555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B600865C630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B600719CBA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B600711D6CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B6007100CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B60070E155C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B60071B04CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B60070C87BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B6006CAB924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B6008B8D555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B1A0B481630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B1A09FC1BA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B1A09F426CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B1A09F25CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B1A09F0655C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B1A09FD54CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B1A09EED7BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B1A09AD0924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B1A0B9B2555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AE1C3BE0630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AE1C2720BA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AE1C26A16CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AE1C2684CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AE1C266555C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AE1C27344CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AE1C264C7BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002AE1C222F924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002AE1C4111555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B51FAF83630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B51F9AC3BA5  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B51F9A446CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B51F9A27CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B51F9A0855C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B51F9AD74CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B51F99EF7BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B51F95D2924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B51FB4B4555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B2DFC550630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B2DFB090BA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B2DFB0116CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B2DFAFF4CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B2DFAFD555C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B2DFB0A44CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B2DFAFBC7BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B2DFAB9F924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B2DFCA81555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B3587CEF630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B358682FBA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B35867B06CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B3586793CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B358677455C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B35868434CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B358675B7BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B358633E924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B3588220555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B68CAFB1630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B68C9AF1BA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B68C9A726CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B68C9A55CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B68C9A3655C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B68C9B054CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B68C9A1D7BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B68C9600924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B68CB4E2555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B512BCEF630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B512A82FBA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B512A7B06CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B512A793CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B512A77455C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B512A8434CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B512A75B7BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B512A33E924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B512C220555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AB5FB5A8630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB5FA0E8BA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB5FA0696CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB5FA04CCAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB5FA02D55C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB5FA0FC4CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB5FA0147BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002AB5F9BF7924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002AB5FBAD9555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B4522734630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B4521274BA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B45211F56CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B45211D8CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B45211B955C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B45212884CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B45211A07BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B4520D83924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B4522C65555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AF512958630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AF511498BA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AF5114196CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AF5113FCCAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AF5113DD55C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AF5114AC4CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AF5113C47BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002AF510FA7924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002AF512E89555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B6A53778630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B6A522B8BA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B6A522396CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B6A5221CCAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B6A521FD55C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B6A522CC4CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B6A521E47BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B6A51DC7924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B6A53CA9555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B5A40C2E630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B5A3F76EBA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B5A3F6EF6CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B5A3F6D2CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B5A3F6B355C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B5A3F7824CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B5A3F69A7BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B5A3F27D924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B5A4115F555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AFBD3B96630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AFBD26D6BA5  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AFBD26576CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AFBD263ACAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AFBD261B55C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AFBD26EA4CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AFBD26027BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002AFBD21E5924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002AFBD40C7555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B8932AAB630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B89315EBBA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B893156C6CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B893154FCAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B893153055C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B89315FF4CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B89315177BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B89310FA924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B8932FDC555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B0F2C2A5630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B0F2ADE5BA5  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B0F2AD666CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B0F2AD49CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B0F2AD2A55C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B0F2ADF94CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B0F2AD117BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B0F2A8F4924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B0F2C7D6555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B3C10084630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B3C0EBC4BA5  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B3C0EB456CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B3C0EB28CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B3C0EB0955C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B3C0EBD84CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B3C0EAF07BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B3C0E6D3924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B3C105B5555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002BAA1907E630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002BAA17BBEBA5  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002BAA17B3F6CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002BAA17B22CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002BAA17B0355C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002BAA17BD24CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002BAA17AEA7BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002BAA176CD924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002BAA195AF555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002ACA7378C630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002ACA722CCBA5  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002ACA7224D6CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002ACA72230CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002ACA7221155C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002ACA722E04CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002ACA721F87BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002ACA71DDB924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002ACA73CBD555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002BA9F03E4630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002BA9EEF24BA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002BA9EEEA56CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002BA9EEE88CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002BA9EEE6955C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002BA9EEF384CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002BA9EEE507BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002BA9EEA33924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002BA9F0915555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B526AB34630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B5269674BA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B52695F56CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B52695D8CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B52695B955C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B52696884CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B52695A07BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B5269183924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B526B065555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B50DEBFF630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B50DD73FBA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B50DD6C06CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B50DD6A3CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B50DD68455C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B50DD7534CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B50DD66B7BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B50DD24E924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B50DF130555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AB1DFDF5630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB1DE935BA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB1DE8B66CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB1DE899CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB1DE87A55C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB1DE9494CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB1DE8617BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002AB1DE444924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002AB1E0326555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B4011443630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B400FF83BA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B400FF046CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B400FEE7CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B400FEC855C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B400FF974CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B400FEAF7BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B400FA92924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B4011974555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B8C6E78F630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B8C6D2CFBA5  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B8C6D2506CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B8C6D233CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B8C6D21455C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B8C6D2E34CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B8C6D1FB7BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B8C6CDDE924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B8C6ECC0555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B3AD655A630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B3AD509ABA5  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B3AD501B6CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B3AD4FFECAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B3AD4FDF55C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B3AD50AE4CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B3AD4FC67BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B3AD4BA9924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B3AD6A8B555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B2680026630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B267EB66BA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B267EAE76CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B267EACACAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B267EAAB55C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B267EB7A4CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B267EA927BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B267E675924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B2680557555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B145B138630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B1459C78BA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B1459BF96CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B1459BDCCAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B1459BBD55C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B1459C8C4CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B1459BA47BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B1459787924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B145B669555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B432889E630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B43273DEBA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B432735F6CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B4327342CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B432732355C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B43273F24CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B432730A7BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B4326EED924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B4328DCF555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B985D0A7630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B985BBE7BA5  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B985BB686CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B985BB4BCAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B985BB2C55C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B985BBFB4CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B985BB137BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B985B6F6924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B985D5D8555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B761E230630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B761CD70BA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B761CCF16CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B761CCD4CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B761CCB555C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B761CD844CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B761CC9C7BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B761C87F924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B761E761555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AFB16E99630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AFB159D9BA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AFB1595A6CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AFB1593DCAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AFB1591E55C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AFB159ED4CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AFB159057BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002AFB154E8924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002AFB173CA555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AFC34C57630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AFC33797BA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AFC337186CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AFC336FBCAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AFC336DC55C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AFC337AB4CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AFC336C37BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002AFC332A6924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002AFC35188555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B85295EB630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B852812BBA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B85280AC6CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B852808FCAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B852807055C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B852813F4CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B85280577BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B8527C3A924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B8529B1C555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B6517F1E630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B6516A5EB9E  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B65169DF6CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B65169C2CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B65169A355C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B6516A724CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B651698A7BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B651656D924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B651844F555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AEC108E1630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AEC0F421B9E  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AEC0F3A26CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AEC0F385CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AEC0F36655C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AEC0F4354CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AEC0F34D7BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002AEC0EF30924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002AEC10E12555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AB85CEE2630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB85BA22BA5  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB85B9A36CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB85B986CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB85B96755C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB85BA364CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB85B94E7BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002AB85B531924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002AB85D413555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002ADB6F7F6630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002ADB6E336BA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002ADB6E2B76CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002ADB6E29ACAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002ADB6E27B55C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002ADB6E34A4CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002ADB6E2627BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002ADB6DE45924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002ADB6FD27555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AC5917F4630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AC590334BA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AC5902B56CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AC590298CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AC59027955C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AC5903484CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AC5902607BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002AC58FE43924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002AC591D25555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002BA938121630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002BA936C61BA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002BA936BE26CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002BA936BC5CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002BA936BA655C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002BA936C754CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002BA936B8D7BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002BA936770924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002BA938652555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B2820AF0630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B281F630BA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B281F5B16CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B281F594CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B281F57555C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B281F6444CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B281F55C7BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B281F13F924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B2821021555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002ABA4A6DA630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002ABA4921ABA5  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002ABA4919B6CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002ABA4917ECAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002ABA4915F55C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002ABA4922E4CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002ABA491467BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002ABA48D29924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002ABA4AC0B555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AB716AFF630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB71563FBA5  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB7155C06CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB7155A3CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB71558455C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB7156534CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB71556B7BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002AB71514E924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002AB717030555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B1C16F5E630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B1C15A9EBA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B1C15A1F6CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B1C15A02CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B1C159E355C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B1C15AB24CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B1C159CA7BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B1C155AD924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B1C1748F555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B13C733F630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B13C5E7FBA5  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B13C5E006CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B13C5DE3CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B13C5DC455C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B13C5E934CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B13C5DAB7BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B13C598E924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B13C7870555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AD7C106A630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AD7BFBAABA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AD7BFB2B6CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AD7BFB0ECAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AD7BFAEF55C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AD7BFBBE4CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AD7BFAD67BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002AD7BF6B9924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002AD7C159B555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B04E9C47630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B04E8787BA5  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B04E87086CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B04E86EBCAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B04E86CC55C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B04E879B4CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B04E86B37BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B04E8296924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B04EA178555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B9A45CAF630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B9A447EFBA5  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B9A447706CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B9A44753CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B9A4473455C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B9A448034CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B9A4471B7BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B9A442FE924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B9A461E0555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B9F86F20630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B9F85A60BA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B9F859E16CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B9F859C4CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B9F859A555C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B9F85A744CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B9F8598C7BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B9F8556F924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B9F87451555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AB12FBA2630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB12E6E2BA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB12E6636CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB12E646CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB12E62755C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB12E6F64CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AB12E60E7BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002AB12E1F1924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002AB1300D3555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AD03D7A7630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AD03C2E7BA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AD03C2686CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AD03C24BCAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AD03C22C55C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AD03C2FB4CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AD03C2137BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002AD03BDF6924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002AD03DCD8555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AE0EC1AE630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AE0EACEEBA5  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AE0EAC6F6CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AE0EAC52CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AE0EAC3355C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AE0EAD024CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002AE0EAC1A7BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002AE0EA7FD924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002AE0EC6DF555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B212AEDA630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B2129A1ABA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B212999B6CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B212997ECAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B212995F55C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B2129A2E4CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B21299467BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B2129529924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B212B40B555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_gam           00000000035472EB  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B16AAE22630  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B16A9962BA0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B16A98E36CC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B16A98C6CAE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B16A98A755C  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B16A99764CD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00002B16A988E7BB  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00002B16A9471924  pmpi_bcast            Unknown  Unknown
+vasp_gam           000000000057F5AF  Unknown               Unknown  Unknown
+vasp_gam           0000000000960D88  Unknown               Unknown  Unknown
+vasp_gam           000000000097C5FC  Unknown               Unknown  Unknown
+vasp_gam           0000000000951042  Unknown               Unknown  Unknown
+vasp_gam           00000000009CEF10  Unknown               Unknown  Unknown
+vasp_gam           0000000001D4117C  Unknown               Unknown  Unknown
+vasp_gam           0000000003229579  Unknown               Unknown  Unknown
+vasp_gam           0000000000422662  Unknown               Unknown  Unknown
+libc-2.17.so       00002B16AB353555  __libc_start_main     Unknown  Unknown
+vasp_gam           0000000000422569  Unknown               Unknown  Unknown
