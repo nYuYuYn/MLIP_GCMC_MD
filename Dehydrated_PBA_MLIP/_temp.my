@@ -1,0 +1,78 @@
+# 1) Initialization
+units metal
+boundary p p p
+atom_style atomic
+variable current_Na equal 
+# 2) System definition
+read_data  diffusion_400/400_diffusion_.data
+#replicate 4 8 8
+mass 1 12.10 # C
+mass 2 54.94 # Mn
+mass 3 55.85 # Fe
+mass 4 14.01 # N
+mass 5 22.99 # Na
+variable seed index 13240
+
+# 3) Simulation settings
+group Na type 5
+group PB type 1 2 3 4
+group Mn type 2
+group Fe type 3
+group N type 4
+
+pair_style  mlip load_from=curr.almtp
+pair_coeff  * *
+
+# check deleted atoms
+delete_atoms overlap 0.1 all all
+
+
+
+
+
+
+# 4) Visualization
+dump dump all custom 4000 dump._temp.trj id type x y z
+restart 50000 _temp_restart
+log _temp.log
+# 5) Run
+reset_atoms id sort yes
+neighbor        2 bin
+neigh_modify    every 5 delay 5 check yes
+
+compute_modify thermo_temp dynamic yes
+compute ctNa Na temp
+compute ctPB PB temp
+compute_modify ctNa dynamic/dof yes
+compute_modify ctPB dynamic/dof yes
+
+compute msd_PB PB msd com yes
+compute msd_Na Na msd com yes
+fix avg_msd_PB PB ave/time 1000 10 10000 c_msd_PB[1] c_msd_PB[2] c_msd_PB[3] c_msd_PB[4]
+fix avg_msd_Na Na ave/time 1000 10 10000 c_msd_Na[1] c_msd_Na[2] c_msd_Na[3] c_msd_Na[4]
+
+variable        temp loop 9    # (1100-300)/100 + 1 = 16 steps
+variable        curTemp equal 300+(v_temp-1)*100  # Calculate current temperature
+
+variable dt equal 0.0005
+
+label           heating_loop
+    print           "Temperature: ${curTemp}K"
+
+    # Set temperature and pressure
+    velocity        all create ${curTemp} 12345 dist gaussian
+    fix             1 all npt temp ${curTemp} ${curTemp} 0.1 tri 1 1 $(2000.0*dt)
+
+    timestep 0.001
+    run             50000
+    thermo 500
+    thermo_style custom step temp etotal press vol atoms c_msd_PB[4] c_msd_Na[4]
+    # Unfix for next iteration
+    unfix           1
+
+    # Write configuration
+    write_data Na_${current_Na}_${curTemp}K.data
+
+
+next            temp
+jump            SELF heating_loop
