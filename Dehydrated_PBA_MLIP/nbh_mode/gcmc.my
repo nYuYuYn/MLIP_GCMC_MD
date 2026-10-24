@@ -1,0 +1,63 @@
+# 1) Initialization
+units metal
+boundary p p p
+atom_style atomic
+variable T equal 300
+
+# 2) System definition
+read_data  MnFePBA_after.data
+variable seed index 1016478
+
+# 3) Simulation settings
+group Na type 5
+group PB type 1 2 3 4
+
+pair_style  mlip load_from=curr.almtp extrapolation_control=true extrapolation_control:threshold_break=10 extrapolation_control:threshold_save=2 extrapolation_control:save_extrapolative_to=preselected.cfg
+pair_coeff  * *
+
+# check deleted atoms
+#delete_atoms overlap 0.1 all all
+
+## count the number of sodium in the cfg
+variable sodium atom "type==5"
+group sodium dynamic all var sodium 
+variable nNa equal count(sodium)
+fix myat1 all ave/time 100 10 1000 v_nNa file numberNa.dat
+
+# 4) Visualization
+dump dump all atom 100 dump.gcmc.trj
+
+# 5) Run
+# specify that the number of molecules is not constant
+#comm_modify vel yes
+velocity all create ${T} ${seed} mom yes rot yes dist gaussian
+compute_modify thermo_temp dynamic yes
+compute ctNa Na temp
+compute ctPB PB temp
+compute_modify ctNa dynamic/dof yes
+compute_modify ctPB dynamic/dof yes
+
+# fix Na & PB separately
+fix mynvt1 Na nvt temp 300 300 0.00001
+fix mynvt2 PB nvt temp 300 300 0.00001
+fix_modify mynvt1 temp ctNa
+fix_modify mynvt2 temp ctPB
+
+#timestep 0.00001
+#thermo 100
+#run 1000
+
+variable xlo equal xlo+0.1
+variable xhi equal xhi-0.1
+variable ylo equal ylo+0.1
+variable yhi equal yhi-0.1
+variable zlo equal zlo+0.1
+variable zhi equal zhi-0.1
+region system block ${xlo} ${xhi} ${ylo} ${yhi} ${zlo} ${zhi}
+fix fgcmc Na gcmc 100 100 512 5 65899 ${T} 2.0 0.1 full_energy region system max 512 min 0
+#fix fgcmc all gcmc 100 100 512 5 65899 ${T} -0.1 0.1 full_energy region system max 512 min 0
+timestep 0.0001
+thermo 100
+run 45000
+write_data MnFePBA_gcmc.data
+#write_dump all atom dump.trj

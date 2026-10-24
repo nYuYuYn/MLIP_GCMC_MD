@@ -1,0 +1,75 @@
+# 1) Initialization
+units metal
+boundary p p p
+atom_style atomic
+variable T equal 300
+
+# 2) System definition
+read_data  PBC_16.data
+mass 4 14.01 #N
+mass 1 12.10 #C
+mass 5 22.99 #Na
+mass 3 55.85 #Fe
+mass 2 54.94 #Mn
+variable seed index 1032173
+
+# 3) Simulation settings
+group Na type 5
+group N type 4
+group Fe type 3
+group Mn type 2
+group C type 1
+pair_style  mlip load_from=curr.almtp
+pair_coeff  * *
+
+# check deleted atoms
+delete_atoms overlap 2 C C
+delete_atoms overlap 3 Mn Mn
+delete_atoms overlap 3 Fe Fe
+delete_atoms overlap 2 N N
+delete_atoms overlap 3 Na Na
+delete_atoms overlap 0.5 all all
+neighbor        2 bin
+neigh_modify    every 1 delay 5 check yes
+
+# 3) Simulation settings
+region r1 sphere  9 side in
+region r2 sphere  9 side out
+group fixed region r1
+group relaxed region r2
+
+fix mysf fixed setforce 0 0 0 # no force
+velocity fixed set 0 0 0 # no velocity
+velocity relaxed create ${T} ${seed} mom yes rot yes dist gaussian
+
+dump dump all atom 50 dump.relax.trj
+fix flush all print 50 "Flushing dump file" file NUL
+
+# 4) NPT
+variable dt equal 0.0001 #0.5 fs
+fix mynvt all nvt temp 300 300 $(10.0*dt)
+
+compute T_relax relaxed temp
+fix_modify mynvt temp T_relax
+timestep ${dt}
+thermo 100
+thermo_modify temp T_relax
+fix flushTrigger all print 100 "Flush trigger" file flush_trigger.txt screen no
+run 5000
+delete_atoms overlap 0.5 all all
+# 5) RDF & Coordination number
+compute myRDF all rdf 100 1 3 1 4 4 2 4 5 2 3
+
+# Compute Fe-C and Mn-N coordination numbers
+compute FeCcoord Fe coord/atom cutoff 3.5 group C
+compute MnNcoord Mn coord/atom cutoff 3.5 group N
+compute NaNcoord Na coord/atom cutoff 3.5 group N
+
+# Output RDF and coordination numbers at the final timestep
+fix rdf_output all ave/time 1 1 1 c_myRDF[*] file rdf_final.rdf mode vector
+dump FeC_dump Fe custom 5000 FeC_coord_final.txt id type c_FeCcoord
+dump MnN_dump Mn custom 5000 MnN_coord_final.txt id type c_MnNcoord
+dump NaN_dump Na custom 5000 NaN_coord_final.txt id type c_NaNcoord
+run 0
+
+write_dump all custom relax_15.dump id type x y z

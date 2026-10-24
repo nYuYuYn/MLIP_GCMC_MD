@@ -1,0 +1,100 @@
+# 1) Initialization
+units metal
+boundary p p p
+atom_style atomic
+variable T equal 300
+
+# 2) System definition
+read_data  MnFePBA_300K.data
+replicate 2 4 4
+mass 1 12.10 # C
+mass 2 54.94 # Mn
+mass 3 55.85 # Fe
+mass 4 14.01 # N
+mass 5 22.99 # Na
+variable seed index 2025023
+
+# 3) Simulation settings
+group Na type 5
+group PB type 1 2 3 4
+group Mn type 2
+group Fe type 3
+group N type 4
+
+pair_style  mlip load_from=curr.almtp extrapolation_control=true extrapolation_control:threshold_break=10 extrapolation_control:threshold_save=2 extrapolation_control:save_extrapolative_to=preselected.cfg
+pair_coeff  * *
+
+# check deleted atoms
+delete_atoms overlap 0.1 all all
+
+## count the number of sodium in the cfg
+variable sodium atom "type==5"
+group sodium dynamic all var sodium
+variable nNa equal count(sodium)
+fix myat1 all ave/time 100 10 1000 v_nNa file numberNa.dat
+#variable qMn equal charge(Mn)/count(Mn)
+#variable qFe equal charge(Fe)/count(Fe)
+#variable qN equal charge(N)/count(N)
+
+# 4) Visualization
+dump dump all atom 100 dump.gcmc.trj
+
+# 5) Run
+# specify that the number of molecules is not constant
+#comm_modify vel yes
+
+reset_atoms id sort yes
+neighbor        7 bin
+neigh_modify    every 1 delay 5 check yes
+
+velocity all create ${T} ${seed} mom yes rot yes dist gaussian
+compute_modify thermo_temp dynamic yes
+compute ctNa Na temp
+compute ctPB PB temp
+compute_modify ctNa dynamic/dof yes
+compute_modify ctPB dynamic/dof yes
+
+# fix Na & PB separately
+#min_style cg
+#minimize 1.0e-4 1.0e-6 1000 10000
+variable dt equal 0.0005 #0.1 fs
+
+# 6) NPT and NVT
+
+# ) NPT 
+#fix mynve all nve
+#fix myber all temp/berendsen ${T} ${T} 100
+#fix mynpt all npt temp ${T} ${T} $(100.0*dt) iso 1 1 $(1000.0*dt)
+#fix myber all temp/berendsen ${T} ${T} $(100.0*dt)
+#timestep ${dt}
+#thermo 100
+#thermo_style custom step temp etotal press vol v_qMn v_qFe v_qN
+#run 5000
+
+# ) NVT
+#fix mynvt all nvt temp 300 300 $(100.0*dt)
+fix mynvt1 Na nvt temp 300 300 $(200.0*dt) 
+fix mynvt2 PB nvt temp 300 300 $(200.0*dt)
+fix_modify mynvt1 temp ctNa
+fix_modify mynvt2 temp ctPB
+timestep ${dt}
+thermo 100
+run 5000
+
+variable xlo equal xlo+0.1
+variable xhi equal xhi-0.1
+variable ylo equal ylo+0.1
+variable yhi equal yhi-0.1
+variable zlo equal zlo+0.1
+variable zhi equal zhi-0.1
+region system block ${xlo} ${xhi} ${ylo} ${yhi} ${zlo} ${zhi}
+
+# check deleted atoms
+
+fix fgcmc Na gcmc 100 100 512 5 65899 ${T} -1.5 0.1 full_energy region system max 512 min 0
+#fix fgcmc all gcmc 100 100 512 5 65899 ${T} -1.0 0.1 full_energy region system max 512 min 0
+timestep 0.0001
+run 45000
+write_data MnFePBA_gcmc.data
+write_dump all atom dump.trj
+
