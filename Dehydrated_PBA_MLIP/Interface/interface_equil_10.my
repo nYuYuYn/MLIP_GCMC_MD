@@ -1,0 +1,66 @@
+# 1) Initialization
+units metal
+boundary p p p
+atom_style atomic
+variable T equal 300
+variable N equal 10
+variable n equal 10
+
+# 2) System definition
+read_data  300K_interface_10.data
+replicate 1 1 1
+
+mass 1 12.10 # C
+mass 2 54.94 # Mn
+mass 3 55.85 # Fe
+mass 4 14.01 # N
+mass 5 22.99 # Na
+
+variable seed index 31547
+
+# 3) Simulation settings
+group Na type 5
+group PB type 1 2 3 4
+group Mn type 2
+group Fe type 3
+group N type 4
+group C type 1
+
+pair_style mlip load_from=curr.almtp
+pair_coeff  * *
+
+# Check deleted atoms
+delete_atoms overlap 0.1 all all
+
+## Count the number of sodium in the config
+variable sodium atom "type==5"
+group sodium dynamic all var sodium
+variable nNa equal count(sodium)
+
+# 4) Visualization
+dump dump_1 all custom 2000 interface/dump.${T}K_interface_equil_${N}.trj id type x y z
+log interface/${T}K_interface_equil_${N}.log
+restart 20000 interface/${T}K_interface_equil_${N}_restart
+
+# 5) Run
+reset_atoms id sort yes
+neighbor        2 bin
+neigh_modify    every 5 delay 5 check yes
+velocity all create ${T} ${seed} mom yes rot yes dist gaussian
+compute_modify thermo_temp dynamic yes
+compute ctNa Na temp
+compute ctPB PB temp
+compute_modify ctNa dynamic/dof yes
+compute_modify ctPB dynamic/dof yes
+
+variable dt equal 0.0005
+
+############################################## NPT equilibration #############################################
+fix mynpt all npt temp ${T} ${T} $(200.0*dt) tri 1 1 $(2000.0*dt)
+timestep 0.001
+thermo 500
+thermo_style custom step temp etotal press vol v_nNa
+run 200000
+
+write_data interface/${T}K_interface_equil_${N}.data
+write_dump all custom interface/${T}K_interface_equil_${N}.dump id type x y z

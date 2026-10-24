@@ -1,0 +1,144 @@
+# 1) Initialization
+units metal
+boundary p p p
+atom_style atomic
+variable T equal 300
+variable N equal 4
+variable n equal 4
+
+# 2) System definition
+read_data  interface/MnFePBA_interface_4.data
+replicate 1 1 1
+mass 1 12.10 # C
+mass 2 54.94 # Mn
+mass 3 55.85 # Fe
+mass 4 14.01 # N
+mass 5 22.99 # Na
+variable seed index 31547
+
+# 3) Simulation settings
+group Na type 5
+group PB type 1 2 3 4
+group Mn type 2
+group Fe type 3
+group N type 4
+group C type 1
+pair_style mlip load_from=curr.almtp
+pair_coeff  * *
+
+# check deleted atoms
+delete_atoms overlap 0.1 all all
+
+## count the number of sodium in the cfg
+variable sodium atom "type==5"
+group sodium dynamic all var sodium
+variable nNa equal count(sodium)
+
+
+# 4) Visualization
+dump dump_1 all custom 2000 interface/dump.interface_post_${N}.trj id type x y z
+log interface/interface_post_${N}.log
+restart 20000 interface/interface_post_${N}_restart
+
+# 5) Run
+reset_atoms id sort yes
+neighbor        2 bin
+neigh_modify    every 5 delay 5 check yes
+velocity all create ${T} ${seed} mom yes rot yes dist gaussian
+compute_modify thermo_temp dynamic yes
+compute ctNa Na temp
+compute ctPB PB temp
+compute_modify ctNa dynamic/dof yes
+compute_modify ctPB dynamic/dof yes
+
+# Fixed: Potential energy computations with proper averaging
+compute Mn_PE Mn pe/atom
+compute Fe_PE Fe pe/atom
+compute avg_Mn_PE Mn reduce ave c_Mn_PE
+compute avg_Fe_PE Fe reduce ave c_Fe_PE
+
+# Time-averaged potential energy output
+fix avg_Mn_PE_out Mn ave/time 100 10 1000 c_avg_Mn_PE file interface/Mn_PE_post_avg_${T}K_${N}.dat mode scalar
+fix avg_Fe_PE_out Fe ave/time 100 10 1000 c_avg_Fe_PE file interface/Fe_PE_post_avg_${T}K_${N}.dat mode scalar
+
+variable dt equal 0.0005
+
+# RDF computation
+compute myRDF all rdf 100 1 3 1 4 4 2 4 5 2 3
+fix rdf_output all ave/time 50 20 4000 c_myRDF[*] file interface/${T}K_rdf_final_interface_post_${N}.rdf mode vector
+
+# Coordination number computations
+compute FeCcoord Fe coord/atom cutoff 2 group C
+compute MnNcoord Mn coord/atom cutoff 2.3 group N
+compute NaNcoord Na coord/atom cutoff 3.3 group N
+
+# Fixed: Dump commands with proper compute names
+dump FeC_dump Fe custom 4000 interface/${T}K_FeC_coord_interface_post_${N}.txt id type c_FeCcoord
+dump MnN_dump Mn custom 4000 interface/${T}K_MnN_coord_interface_post_${N}.txt id type c_MnNcoord
+dump NaN_dump Na custom 4000 interface/${T}K_NaN_coord_interface_post_${N}.txt id type c_NaNcoord
+
+# Fixed: Separate dump commands for Mn and Fe potential energy
+dump Mn_PE_dump Mn custom 4000 interface/dump.Mn_pe_atom_post_${N}.txt id type x y z c_Mn_PE
+dump Fe_PE_dump Fe custom 4000 interface/dump.Fe_pe_atom_post_${N}.txt id type x y z c_Fe_PE
+
+# Initial equilibration - NVT
+fix mynvt1 all nvt temp ${T} ${T} $(200.0*dt)
+fix 1 all recenter INIT INIT INIT
+timestep 0.001
+thermo 500
+thermo_style custom step temp etotal press vol v_nNa atoms c_avg_Mn_PE c_avg_Fe_PE
+run 10000
+
+# Define regions for GCMC
+variable xlo equal xlo
+variable xhi equal xhi
+variable ylo equal ylo+0.1
+variable yhi equal yhi-0.1
+variable zlo equal zlo+0.1
+variable zhi equal zhi-0.1
+variable xb equal "v_xlo + v_xhi"
+variable x_mid equal "v_xb / 2"
+variable x_quater equal "v_xb / 4 * 3"
+variable gcmc_freq equal 2000*${n}
+variable halt_limit equal 2100*${n}
+
+region system block ${xlo} ${xhi} ${ylo} ${yhi} ${zlo} ${zhi}
+region upper_x_half block ${x_mid} $(xhi-0.1) ${ylo} ${yhi} ${zlo} ${zhi} units box
+#fix halt_upper Na halt 4000 v_nNa >= ${halt_limit} error continue
+
+fix fgcmc Na gcmc 4000 ${gcmc_freq} ${gcmc_freq} 5 65869 ${T} -0.5 0.1 full_energy region upper_x_half
+timestep 0.0004
+run 400000
+
+write_data interface/MnFePBA_interface_post_${N}.data
+write_dump all custom interface/${T}K_RDF_post_${N}.dump id type x y 
+
+# Clean up second GCMC
+#unfix halt_upper
+unfix fgcmc
+region upper_x_half delete
+
+fix fgcmc Na gcmc 4000 ${gcmc_freq} ${gcmc_freq} 5 65869 ${T} -1.68 0.1 full_energy region system
+timestep 0.0004
+run 400000
+
+# Final equilibration - NPT
+unfix mynvt1
+unfix 1
+fix mynpt2 all npt temp ${T} ${T} $(200.0*dt) tri 1 1 $(2000.0*dt)
+thermo 500
+run 100000
+
+# Final output
+write_data interface/MnFePBA_interface_post_${N}_2.data
+write_dump all custom interface/${T}K_RDF_post_${N}_2.dump id type x y z
+
+# Clean up fixes and computes
+unfix avg_Mn_PE_out
+unfix avg_Fe_PE_out
+unfix rdf_output
+unfix mynpt2
+
+# Final summary
+print "Simulation completed successfully!"
+print "Final number of Na atoms: ${nNa}"

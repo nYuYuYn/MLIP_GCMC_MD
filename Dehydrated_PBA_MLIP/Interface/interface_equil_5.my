@@ -1,0 +1,148 @@
+# 1) Initialization
+units metal
+boundary p p p
+atom_style atomic
+variable T equal 400
+variable N equal 5
+variable n equal 5
+
+# 2) System definition
+read_data  interface/interface_equil_5.data
+replicate 1 1 1
+
+mass 1 12.10 # C
+mass 2 54.94 # Mn
+mass 3 55.85 # Fe
+mass 4 14.01 # N
+mass 5 22.99 # Na
+
+variable seed index 31547
+
+# 3) Simulation settings
+group Na type 5
+group PB type 1 2 3 4
+group Mn type 2
+group Fe type 3
+group N type 4
+group C type 1
+
+pair_style mlip load_from=curr.almtp
+pair_coeff  * *
+
+# Check deleted atoms
+delete_atoms overlap 0.1 all all
+
+## Count the number of sodium in the config
+variable sodium atom "type==5"
+group sodium dynamic all var sodium
+variable nNa equal count(sodium)
+
+# 4) Visualization
+dump dump_1 all custom 2000 interface/dump.${T}K_interface_sub2_${N}.trj id type x y z
+log interface/${T}K_interface_sub2_${N}.log
+restart 20000 interface/${T}K_interface_sub2_${N}_restart
+
+# 5) Run
+reset_atoms id sort yes
+neighbor        2 bin
+neigh_modify    every 5 delay 5 check yes
+velocity all create ${T} ${seed} mom yes rot yes dist gaussian
+compute_modify thermo_temp dynamic yes
+compute ctNa Na temp
+compute ctPB PB temp
+compute_modify ctNa dynamic/dof yes
+compute_modify ctPB dynamic/dof yes
+
+# Fixed: Potential energy computations with proper averaging
+compute Mn_PE Mn pe/atom
+compute Fe_PE Fe pe/atom
+compute avg_Mn_PE Mn reduce ave c_Mn_PE
+compute avg_Fe_PE Fe reduce ave c_Fe_PE
+
+variable dt equal 0.0005
+
+############### RDF computation ###############
+compute myRDF all rdf 100 1 3 1 4 4 2 4 5 2 3
+fix rdf_output all ave/time 50 20 4000 c_myRDF[*] file interface/${T}K_rdf_final_interface_${N}.rdf mode vector
+
+############### Coordination number computations ###############
+
+compute NaNcoord Na coord/atom cutoff 3.3 group N
+dump NaN_dump Na custom 4000 interface/${T}K_NaN_coord_interface_sub_${N}.txt id type c_NaNcoord
+
+# Fixed: Separate dump commands for Mn and Fe potential energy
+dump Mn_PE_dump Mn custom 4000 interface/dump.${T}K_Mn_pe_atom_sub_${N}.txt id type x y z c_Mn_PE
+dump Fe_PE_dump Fe custom 4000 interface/dump.${T}K_Fe_pe_atom_sub_${N}.txt id type x y z c_Fe_PE
+
+# Remove Na atoms from half the cell
+# Get initial cell dimensions
+variable xlo_init equal xlo+0.5
+variable xhi_init equal xhi-0.5
+variable ylo_init equal ylo+0.5
+variable yhi_init equal yhi-0.5
+variable zlo_init equal zlo+0.5
+variable zhi_init equal zhi-0.5
+variable xy_init equal xy
+variable xz_init equal xz
+variable yz_init equal yz
+
+variable gcmc_freq equal 2000*${n}
+variable halt_limit equal 2100*${n}
+variable dt equal 0.0005
+
+# Calculate initial midpoint
+variable xb_low equal (${xlo_init}+${xhi_init})*0.4
+variable xb_high equal (${xlo_init}+${xhi_init})*0.6
+
+# Define prism region for half the cell
+region half_cell_init prism ${xb_low} ${xb_high} ${ylo_init} ${yhi_init} ${zlo_init} ${zhi_init} ${xy_init} ${xz_init} ${yz_init}
+
+############################################## NPT equilibration #############################################
+fix mynpt all npt temp ${T} ${T} $(200.0*dt) tri 1 1 $(2000.0*dt)
+timestep 0.001
+thermo 500
+thermo_style custom step temp etotal press vol v_nNa
+run 4000
+
+############################################## GCMC at the interface #############################################
+fix fgcmc Na gcmc 4000 ${gcmc_freq} ${gcmc_freq} 5 65869 ${T} -1.725 0.1 full_energy region half_cell_init
+timestep 0.0004
+run 0
+
+unfix fgcmc
+
+# Write after GCMC
+write_data interface/${T}K_interface_1st_gcmc_${N}.data
+write_dump all custom interface/${T}K_interface_1st_gcmc_${N}.dump id type x y z
+
+############################################## GCMC of the whole system #############################################
+# Get updated cell dimensions after NPT
+variable xlo_new equal xlo+0.5
+variable xhi_new equal xhi-0.5
+variable ylo_new equal ylo+0.5
+variable yhi_new equal yhi-0.5
+variable zlo_new equal zlo+0.5
+variable zhi_new equal zhi-0.5
+variable xy_new equal xy
+variable xz_new equal xz
+variable yz_new equal yz
+
+# Define regions with updated dimensions
+region full_cell prism ${xlo_new} ${xhi_new} ${ylo_new} ${yhi_new} ${zlo_new} ${zhi_new} ${xy_new} ${xz_new} ${yz_new}
+
+# GCMC simulation
+fix fgcmc Na gcmc 4000 ${gcmc_freq} ${gcmc_freq} 5 65869 ${T} -1.725 0.1 full_energy region full_cell
+timestep 0.0004
+run 0
+
+# Write after GCMC
+write_data interface/${T}K_interface_2nd_gcmc_${N}.data
+write_dump all custom interface/${T}Kinterface_2nd_gcmc_${N}.dump id type x y z
+
+############################################## Final equilibration #############################################
+unfix fgcmc
+run 0
+
+# Final output
+write_data interface/${T}K_interface_final_${N}.data
+write_dump all custom interface/${T}K_interface_final_${N}.dump id type x y z

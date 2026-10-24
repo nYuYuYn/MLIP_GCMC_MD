@@ -1,0 +1,72 @@
+# 1) Initialization
+units metal
+boundary p p p
+atom_style atomic
+variable T equal 400
+
+# 2) System definition
+read_data  diffusion_400/400_diffusion_1200.data
+
+mass 1 12.10 # C
+mass 2 54.94 # Mn
+mass 3 55.85 # Fe
+mass 4 14.01 # Na
+mass 5 22.99 # Na
+variable seed index 5353
+
+# 3) Simulation settings
+group Na type 5
+group PB type 1 2 3 4
+group Mn type 2
+group Fe type 3
+group N type 4
+
+pair_style mlip load_from=curr.almtp
+pair_coeff  * *
+
+# check deleted atoms
+delete_atoms overlap 0.1 all all
+
+
+
+
+
+
+# 4) Visualization
+dump dump all custom 4000 diffusion_400/dump.400_diffuse_1200.trj id type x y z
+restart 50000 diffusion_400/400_diffusion_1200_restart
+log diffusion_400/400_diffusion_1200.log
+
+# 5) Run
+reset_atoms id sort yes
+neighbor        2 bin
+neigh_modify    every 5 delay 5 check yes
+
+velocity all create ${T} ${seed} mom yes rot yes dist gaussian
+compute_modify thermo_temp dynamic yes
+compute ctNa Na temp
+compute ctPB PB temp
+compute_modify ctNa dynamic/dof yes
+compute_modify ctPB dynamic/dof yes
+variable dt equal 0.0005 
+
+# ) NPT+MC to equilibrate the structure for 20 ps
+fix mynpt1 all npt temp ${T} ${T} $(200.0*dt) tri 1 1 $(2000.0*dt)
+fix 1 all recenter INIT INIT INIT
+timestep 0.0005
+thermo 500
+thermo_style custom step temp etotal press vol
+run 20000
+
+# ) NPT for 1ns and compute MSD 
+compute msd_PB PB msd com yes
+compute msd_Na Na msd com yes
+fix avg_msd_PB PB ave/time 500 10 5000 c_msd_PB[1] c_msd_PB[2] c_msd_PB[3] c_msd_PB[4] file diffusion_400/400K_msd_PB_1200.dat mode scalar 
+fix avg_msd_Na Na ave/time 500 10 5000 c_msd_Na[1] c_msd_Na[2] c_msd_Na[3] c_msd_Na[4] file diffusion_400/400K_msd_Na_1200.dat mode scalar 
+timestep 0.001
+thermo 500
+thermo_style custom step temp etotal press vol atoms c_msd_PB[4] c_msd_Na[4]
+run 5000000
+
+# ) Save structure
+write_data diffusion_400/400K_diffusion_1200.data

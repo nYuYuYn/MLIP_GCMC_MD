@@ -1,0 +1,130 @@
+# 1) Initialization
+units metal
+boundary p p p
+atom_style atomic
+variable T equal 300
+variable N equal 2
+variable n equal 2
+
+# 2) System definition
+read_data MnFePBA_300K.data
+replicate 8 8 8
+
+mass 1 12.10 # C
+mass 2 54.94 # Mn
+mass 3 55.85 # Fe
+mass 4 14.01 # N
+mass 5 22.99 # Na
+
+variable seed index 31547
+
+# 3) Simulation settings
+group Na type 5
+group PB type 1 2 3 4
+group Mn type 2
+group Fe type 3
+group N type 4
+group C type 1
+
+pair_style mlip load_from=curr.almtp
+pair_coeff  * *
+
+# Check deleted atoms
+delete_atoms overlap 0.1 all all
+
+# Redefine groups after overlap deletion
+group Na type 5
+
+# Remove Na atoms from half the cell
+# Get initial cell dimensions
+variable xlo_init equal xlo
+variable xhi_init equal xhi+0.5
+variable ylo_init equal ylo-0.5
+variable yhi_init equal yhi+0.5
+variable zlo_init equal zlo-0.5
+variable zhi_init equal zhi+0.5
+variable xy_init equal xy
+variable xz_init equal xz
+variable yz_init equal yz
+
+# Calculate initial midpoint
+variable xmid_init equal (${xlo_init}+${xhi_init})/2
+
+# Define prism region for half the cell
+region half_cell_init prism ${xmid_init} ${xhi_init} ${ylo_init} ${yhi_init} ${zlo_init} ${zhi_init} ${xy_init} ${xz_init} ${yz_init}
+
+# Create intersection group and delete - FIXED for atomic style
+group na_in_region region half_cell_init
+group half_na intersect Na na_in_region
+delete_atoms group half_na compress yes
+
+# Clean up temporary groups
+group na_in_region delete
+group half_na delete
+
+# Redefine groups after deletion
+group Na type 5
+
+## Count the number of sodium in the config
+variable sodium atom "type==5"
+group sodium dynamic all var sodium
+variable nNa equal count(sodium)
+
+# 4) Visualization
+dump dump_1 all custom 2000 interface/dump.interface_sub_${N}.trj id type x y z
+log interface/interface_sub_${N}.log
+restart 20000 interface/interface_sub_${N}_restart
+
+variable gcmc_freq equal 2000*${n}
+variable halt_limit equal 2100*${n}
+variable dt equal 0.0005
+
+# Set thermo output
+thermo 1000
+thermo_style custom step temp etotal press vol v_nNa
+
+run 0
+write_data interface/interface_sub_${N}.data
+write_dump all custom interface/interface_sub_${N}.dump id type x y z
+
+# NPT equilibration
+fix mynpt all npt temp ${T} ${T} $(200.0*dt) tri 1 1 $(2000.0*dt)
+timestep 0.001
+run 200000
+
+# Write equilibrated structure
+write_data interface/interface_equil_${N}.data
+write_dump all custom interface/interface_equil_${N}.dump id type x y z
+
+# Get updated cell dimensions after NPT
+variable xlo_new equal xlo
+variable xhi_new equal xhi
+variable ylo_new equal ylo
+variable yhi_new equal yhi
+variable zlo_new equal zlo
+variable zhi_new equal zhi
+variable xy_new equal xy
+variable xz_new equal xz
+variable yz_new equal yz
+
+# Define regions with updated dimensions
+region full_cell prism ${xlo_new} ${xhi_new} ${ylo_new} ${yhi_new} ${zlo_new} ${zhi_new} ${xy_new} ${xz_new} ${yz_new}
+
+# GCMC simulation
+unfix mynpt
+fix fgcmc Na gcmc 4000 ${gcmc_freq} ${gcmc_freq} 5 65869 300 -1.7 0.1 full_energy region full_cell
+timestep 0.0004
+run 200000
+
+# Write after GCMC
+write_data interface/interface_gcmc_${N}.data
+write_dump all custom interface/interface_gcmc_${N}.dump id type x y z
+
+# Final equilibration
+unfix fgcmc
+fix mynvt all nvt temp ${T} ${T} $(200.0*dt)
+run 200000
+
+# Final output
+write_data interface/interface_final_${N}.data
+write_dump all custom interface/interface_final_${N}.dump id type x y z

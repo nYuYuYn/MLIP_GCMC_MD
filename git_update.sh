@@ -25,7 +25,7 @@ git status --short
 
 # Stage modifications and deletions of tracked files.
 # Untracked files and the nested repository are excluded.
-git add -u
+git add -A -- . ':!MLIP_GCMC_MD'
 
 if ! git diff --cached --quiet; then
     echo

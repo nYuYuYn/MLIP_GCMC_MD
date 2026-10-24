@@ -1,0 +1,108 @@
+# 1) Initialization
+units metal
+boundary s p p
+atom_style atomic
+variable T equal 300
+variable N equal 4
+variable n equal 4
+
+# 2) System definition
+read_data  interface/interface_equil_4.data
+replicate 1 1 1
+
+mass 1 12.10 # C
+mass 2 54.94 # Mn
+mass 3 55.85 # Fe
+mass 4 14.01 # N
+mass 5 22.99 # Na
+
+variable seed index 31547
+
+# 3) Simulation settings
+group Na type 5
+group PB type 1 2 3 4
+group Mn type 2
+group Fe type 3
+group N type 4
+group C type 1
+
+pair_style mlip load_from=curr.almtp
+pair_coeff  * *
+
+# Check deleted atoms
+delete_atoms overlap 0.1 all all
+
+## Count the number of sodium in the config
+variable sodium atom "type==5"
+group sodium dynamic all var sodium
+variable nNa equal count(sodium)
+
+# 4) Visualization
+dump dump_1 all custom 2000 interface/dump.${T}K_interface_free_${N}.trj id type x y z
+log interface/${T}K_interface_free_${N}.log
+restart 20000 interface/${T}K_interface_free_${N}_restart
+
+# 5) Run
+reset_atoms id sort yes
+neighbor        2 bin
+neigh_modify    every 5 delay 5 check yes
+velocity all create ${T} ${seed} mom yes rot yes dist gaussian
+compute_modify thermo_temp dynamic yes
+compute ctNa Na temp
+compute ctPB PB temp
+compute_modify ctNa dynamic/dof yes
+compute_modify ctPB dynamic/dof yes
+
+# Fixed: Potential energy computations with proper averaging
+compute Mn_PE Mn pe/atom
+compute Fe_PE Fe pe/atom
+compute avg_Mn_PE Mn reduce ave c_Mn_PE
+compute avg_Fe_PE Fe reduce ave c_Fe_PE
+
+variable dt equal 0.0005
+
+############### RDF computation ###############
+compute myRDF all rdf 100 1 3 1 4 4 2 4 5 2 3
+fix rdf_output all ave/time 50 20 4000 c_myRDF[*] file interface/${T}K_interface_free_${N}.rdf mode vector
+
+############### Coordination number computations ###############
+
+compute NaNcoord Na coord/atom cutoff 3.3 group N
+dump NaN_dump Na custom 4000 interface/${T}K_NaN_coord_interface_free_${N}.txt id type c_NaNcoord
+
+# Fixed: Separate dump commands for Mn and Fe potential energy
+dump Mn_PE_dump Mn custom 4000 interface/dump.${T}K_Mn_pe_atom_free_${N}.txt id type x y z c_Mn_PE
+dump Fe_PE_dump Fe custom 4000 interface/dump.${T}K_Fe_pe_atom_free_${N}.txt id type x y z c_Fe_PE
+
+# Remove Na atoms from half the cell
+# Get initial cell dimensions
+variable xlo_init equal xlo+0.5
+variable xhi_init equal xhi-0.5
+variable ylo_init equal ylo+0.5
+variable yhi_init equal yhi-0.5
+variable zlo_init equal zlo+0.5
+variable zhi_init equal zhi-0.5
+variable xy_init equal xy
+variable xz_init equal xz
+variable yz_init equal yz
+
+variable gcmc_freq equal 2000*${n}
+variable halt_limit equal 2100*${n}
+variable dt equal 0.0005
+
+# Calculate initial midpoint
+variable xb_low equal (${xlo_init}+${xhi_init})*0.4
+variable xb_high equal (${xlo_init}+${xhi_init})*0.6
+
+# Define prism region for half the cell
+region half_cell_init prism ${xb_low} ${xb_high} ${ylo_init} ${yhi_init} ${zlo_init} ${zhi_init} ${xy_init} ${xz_init} ${yz_init}
+
+############################################## NPT equilibration #############################################
+fix mynpt all npt temp ${T} ${T} $(200.0*dt) tri NULL 1.0 1.0 NULL NULL 0.0 $(2000.0*dt)
+timestep 0.001
+thermo 500
+thermo_style custom step temp etotal press vol v_nNa
+run 500000
+
+write_data interface/${T}K_interface_free_${N}.data
+write_dump all custom interface/${T}K_interface_free_${N}.dump id type x y z
