@@ -1,0 +1,63 @@
+# 1) Initialization
+units metal
+boundary p p p
+atom_style atomic
+variable T equal 400
+
+# 2) System definition
+read_restart  400_diffusion_vac_lv20_5/400_diffusion_2_restart.*
+
+# 3) Simulation settings
+group O type 6
+group PB type 1 2 3 4
+group H2O type 6 7
+group Na type 5
+group N type 4
+pair_style mlip load_from=curr.almtp
+pair_coeff  * *
+variable seed index 789789
+# 4) Visualization
+#dump dump_8 all custom 5 dump.400K_diffuse_8.trj id type x y z
+restart 50000 400_diffusion_vac_lv20_4/400_diffusion_2_restart
+log 400_diffusion_vac_lv20_4/400_diffusion_2.log
+
+# 5) Run
+reset_atoms id sort yes
+neighbor        2 bin
+neigh_modify    every 5 delay 5 check yes
+
+#compute_modify thermo_temp dynamic yes
+compute ctNa Na temp
+compute cth2o H2O temp
+compute ctPB PB temp
+compute_modify ctNa dynamic/dof yes
+compute_modify cth2o dynamic/dof yes
+compute_modify ctPB dynamic/dof yes
+variable dt equal 0.0005 
+
+variable xlo_init equal xlo+0.5
+variable xhi_init equal xhi-0.5
+variable ylo_init equal ylo+0.5
+variable yhi_init equal yhi-0.5
+variable zlo_init equal zlo+0.5
+variable zhi_init equal zhi-0.5
+variable xy_init equal xy
+variable xz_init equal xz
+variable yz_init equal yz
+region system prism ${xlo_init} ${xhi_init} ${ylo_init} ${yhi_init} ${zlo_init} ${zhi_init} ${xy_init} ${xz_init} ${yz_init}
+
+compute msd_h2o H2O msd com yes
+compute msd_PB PB msd com yes
+compute msd_Na Na msd com yes
+
+fix avg_msd_PB PB ave/time 500 10 5000 c_msd_PB[1] c_msd_PB[2] c_msd_PB[3] c_msd_PB[4] file 400_diffusion_vac_lv20_4/400K_msd_PB_2.dat mode scalar 
+fix avg_msd_Na Na ave/time 500 10 5000 c_msd_Na[1] c_msd_Na[2] c_msd_Na[3] c_msd_Na[4] file 400_diffusion_vac_lv20_4/400K_msd_Na_2.dat mode scalar 
+#fix avg_msd_h2o Na ave/time 500 10 5000 c_msd_h2o[1] c_msd_h2o[2] c_msd_h2o[3] c_msd_h2o[4] file 400_diffusion_vac_lv20_4/400K_msd_h2o_2.dat mode scalar 
+fix mynpt1 all npt temp ${T} ${T} $(200.0*dt) tri 1 1 $(2000.0*dt)
+timestep 0.001
+thermo 100
+thermo_style custom step temp etotal press vol atoms c_msd_PB[4] c_msd_Na[4] c_msd_h2o[4]
+run 90000
+write_data 400_diffusion_vac_lv20_4/400K_2.data
+dump dump all custom 4000 400_diffusion_vac_lv20_4/dump.400_diffuse_2.trj id type x y z
+run 10000000

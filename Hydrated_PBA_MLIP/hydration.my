@@ -1,0 +1,128 @@
+atom_style molecular 
+units metal
+boundary p p p
+variable Na equal 32
+variable O equal 32
+variable T equal 300
+variable N equal 1  # Initialize N variable before use
+variable current_dir string  RDF_lv16_E0_sf0.1_f0.1
+
+read_data MnFePBA_300K_full.data
+#replicate 1 2 2
+
+mass 1 12.0107  # C
+mass 2 54.938049  # Mn
+mass 3 55.845  # Fe
+mass 4 14.0067  # N
+mass 5 22.98977  # Na
+mass 6 15.9994  # O
+mass 7 1.00794  # H
+
+variable seed index 2025888
+
+# 3) Simulation settings
+group C type 1
+group Mn type 2
+group Fe type 3
+group N type 4
+group Na type 5
+group O type 6
+group H type 7
+group PB type 1 2 3 4
+group H2O type 6 7
+
+pair_style  mlip load_from=curr.almtp
+pair_coeff  * *
+
+molecule h2omol H2O.mol
+molecule Namol Na.mol
+variable oxygen atom "type==6"
+group oxygen dynamic all var oxygen
+variable nO equal count(oxygen)
+
+variable sodium atom "type==5"
+group sodium dynamic all var sodium
+variable nNa equal count(sodium)
+
+# 4) Visualization
+dump dump all custom 4000 RDF/dump.Na_32_O_16_temp.trj id type x y z
+restart 50000 RDF/Na_32_O_16_temp_restart
+log RDF/Na_32_O_16_temp.log
+delete_atoms group H2O
+
+# 5) Run
+#reset_atoms id sort yes
+neighbor        2 bin
+neigh_modify    every 5 delay 5 check yes
+#compute_modify thermo_temp dynamic yes
+compute ctH2O H2O temp
+compute ctPB PB temp
+compute_modify ctH2O dynamic/dof yes
+compute_modify ctPB dynamic/dof yes
+
+variable dt equal 0.0005
+compute myRDF all rdf 100 1 3 1 4 4 2 4 5 2 3 6 5 6 7
+fix rdf_output all ave/time 50 20 4000 c_myRDF[*] file RDF/300K_rdf_Na_32_O_16.rdf mode vector
+
+compute ONacoord O coord/atom cutoff 2.4 group Na
+compute NaNcoord Na coord/atom cutoff 3.3 group N
+dump ONa_dump Fe custom 4000 RDF/${T}K_ONa_coord_${Na}_${O}.txt id type c_ONacoord
+dump NaN_dump Na custom 4000 RDF/${T}K_NaN_coord_${Na}_${O}.txt id type c_NaNcoord
+
+fix mynpt1 all npt temp ${T} ${T} $(200.0*dt) tri 1 1 $(2000.0*dt)
+fix recenter all recenter INIT INIT INIT
+timestep 0.001
+thermo 100
+thermo_style custom step temp etotal press vol v_nO atoms
+run 2000
+
+write_data RDF_lv12_E0/Na_${Na}_O_${O}_0.data
+write_dump all custom RDF_lv12_E0/Na_${Na}_O_${O}_0.dump id type x y z
+
+variable M loop 50
+label gcmc_loop
+    print ""
+    print "========================================================================"
+    print "OUTER ITERATION: $N"
+    print "========================================================================"
+
+    variable xlo_init equal xlo+0.5
+    variable xhi_init equal xhi-0.5
+    variable ylo_init equal ylo+0.5
+    variable yhi_init equal yhi-0.5
+    variable zlo_init equal zlo+0.5
+    variable zhi_init equal zhi-0.5
+    variable xy_init equal xy
+    variable xz_init equal xz
+    variable yz_init equal yz
+    region system prism ${xlo_init} ${xhi_init} ${ylo_init} ${yhi_init} ${zlo_init} ${zhi_init} ${xy_init} ${xz_init} ${yz_init}
+    
+    fix fgcmc H2O gcmc 2000 50 300 0 15282 500 5.5 0.2 mol h2omol group H2O region system
+    #fix fgcmc_Na Na gcmc 2000 0 300 5 65869 300 -6 0.1 full_energy region system
+    timestep 0.0004
+    run 20000
+    
+    # Check sodium count and exit if needed
+    if "${nO} > 85" then &
+        "region system delete" &
+        "unfix fgcmc" &
+        "jump SELF end_loop"
+    
+    region system delete
+    unfix fgcmc
+    write_data RDF_lv12_E0/Na_${Na}_O_${O}_${M}.data
+    write_dump all custom RDF_lv12_E0/Na_${Na}_O_${O}_${M}.dump id type x y z
+next M
+jump SELF gcmc_loop
+
+label end_loop
+
+unfix mynpt1
+
+# Final NPT run
+fix mynpt2 all npt temp ${T} ${T} $(200.0*dt) tri 1 1 $(2000.0*dt)
+thermo 500
+run 100000
+
+write_data RDF/Na_${Na}_O_${O}_final.data
+write_dump all custom RDF/Na_${Na}_O_${O}_final.dump id type x y z

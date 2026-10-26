@@ -1,0 +1,64 @@
+# 1) Initialization
+units metal
+boundary p p p
+atom_style atomic
+variable T equal 400
+
+# 2) System definition
+read_data  Fe_vac_removed_2.data
+replicate 3 6 6
+
+mass 1 12.0107  # C
+mass 2 54.938049  # Mn
+mass 3 55.845  # Fe
+mass 4 14.0067  # N
+mass 5 22.98977  # Na
+mass 6 15.9994  # O
+mass 7 1.00794  # H
+
+# 3) Simulation settings
+group O type 6
+group PB type 1 2 3 4
+group H2O type 6 7
+group Na type 5
+group N type 4
+
+pair_style mlip load_from=./MTP/curr_lv16.almtp
+pair_coeff  * *
+variable seed index 789789
+
+# 4) Visualization
+log Nt_1000/loop_bias_1.log
+
+reset_atoms id sort yes
+neighbor        2 bin
+neigh_modify    every 5 delay 5 check yes
+velocity all create ${T} ${seed} mom yes rot yes dist gaussian
+
+compute_modify thermo_temp dynamic yes
+compute ctNa Na temp
+compute cth2o H2O temp
+compute ctPB PB temp
+compute_modify ctNa dynamic/dof yes
+compute_modify cth2o dynamic/dof yes
+compute_modify ctPB dynamic/dof yes
+variable dt equal 0.0005 
+
+compute msd_h2o H2O msd com yes
+compute msd_PB PB msd com yes
+compute msd_Na Na msd com yes
+fix 1 all recenter INIT INIT INIT
+fix mynpt1 all npt temp ${T} ${T} $(200.0*dt) tri 1 1 $(2000.0*dt)
+timestep 0.001
+thermo 100
+thermo_style custom step temp etotal press vol
+run 30000
+
+write_data MnFePBA_gcmc_8.data
+write_dump all atom MnFePBA_gcmc_dump_8.trj
+
+unfix mynpt1
+
+dump dump_8 all custom 5 dump.400K_diffuse_8.trj id type x y z
+fix mynve all nve
+run 10000

@@ -1,0 +1,165 @@
+# 1) Initialization
+atom_style molecular 
+units metal
+boundary p p p
+
+variable T equal 1000
+
+read_data 1100_bias_105.data
+#replicate 1 2 2
+mass 1 12.10 # C
+mass 2 54.94 # Mn
+mass 3 55.85 # Fe
+mass 4 14.01 # N
+mass 5 22.99 # Na
+mass 6 15.9994  # O
+mass 7 1.00794  # H
+variable seed index 31755
+group Na type 5
+group PB type 1 2 3 4 
+group Mn type 2
+group Fe type 3
+group N type 4
+group H2O type 6 7
+
+pair_style mlip load_from=./curr.almtp
+pair_coeff  * *
+
+delete_atoms overlap 0.1 all all
+
+molecule h2omol H2O.mol
+molecule Namol Na.mol
+variable oxygen atom "type==6"
+group oxygen dynamic all var oxygen
+variable nO equal count(oxygen)
+
+variable sodium atom "type==5"
+group sodium dynamic all var sodium
+variable nNa equal count(sodium)
+
+# 4) Visualization
+log Nt_1000/loop_bias_1.log
+dump dump all custom 4000 Nt_1000/dump.loop_bias_1.trj id type x y z
+restart 50000 Nt_1000/1000_restart_1
+
+# 5) Run
+reset_atoms id sort yes
+neighbor        2 bin
+neigh_modify    every 5 delay 5 check yes
+
+velocity all create ${T} ${seed} mom yes rot yes dist gaussian
+#compute_modify thermo_temp dynamic yes
+compute ctNa Na temp
+compute ctPB PB temp
+compute ctH2O H2O temp
+compute_modify ctNa dynamic/dof yes
+compute_modify ctPB dynamic/dof yes
+compute_modify ctH2O dynamic/dof yes
+
+variable dt equal 0.0005 
+
+fix mynpt1 all npt temp ${T} ${T} $(200.0*dt) tri 1 1 $(2000.0*dt)
+timestep 0.001
+thermo 500
+thermo_style custom step temp etotal press vol v_nNa v_nO
+run 2000
+unfix mynpt1
+
+variable        N loop 10    # (4050-100)/50 + 1 = 81 steps
+variable        currNt equal 50+(v_N-1)*50  # Calculate current temperature
+
+label bias_loop
+    print ""
+    print "========================================================================"
+    print "OUTER ITERATION: $N, TARGET Na COUNT = ${currNt}"
+    print "========================================================================"
+
+    variable atoms equal count(all)
+    variable step equal step
+    variable k equal 0.01
+    variable nO_center equal ${currNt}
+    variable delta equal "v_nO - v_nO_center"
+    variable delta_squared equal "v_delta * v_delta"
+    variable U atom "v_k * v_delta_squared / (v_nO + 0.0001)"
+    variable Utotal equal "v_k * v_delta_squared"
+    variable F equal 0.0
+
+    fix bias Na addforce 0.0 0.0 v_F energy v_U
+    fix_modify bias energy yes
+    fix mynpt1 all npt temp ${T} ${T} $(200.0*dt) tri 1 1 $(2000.0*dt)
+    fix recenter all recenter INIT INIT INIT
+    fix logAtoms all print 500 "${step} ${atoms}" file atoms_log_${N}.txt screen no title "Step Atoms"
+
+    timestep 0.0002
+    thermo 500
+    thermo_style custom step temp etotal press vol v_nNa v_nO v_Utotal
+
+    variable total_atoms equal count(all)
+    variable prev equal 0.0
+    variable prev_energy equal 0.0
+    variable M delete
+    variable M loop 20
+    
+    label inner_loop
+        variable xlo_init equal xlo+0.5
+        variable xhi_init equal xhi-0.5
+        variable ylo_init equal ylo+0.5
+        variable yhi_init equal yhi-0.5
+        variable zlo_init equal zlo+0.5
+        variable zhi_init equal zhi-0.5
+        variable xy_init equal xy
+        variable xz_init equal xz
+        variable yz_init equal yz
+        region system prism ${xlo_init} ${xhi_init} ${ylo_init} ${yhi_init} ${zlo_init} ${zhi_init} ${xy_init} ${xz_init} ${yz_init}
+
+        print ""
+        print "------------------------------------------------------------"
+        print " ITERATION: $M   previous_avg_Na = ${prev}   previous_energy = ${prev_energy}"
+        print "------------------------------------------------------------"
+
+        # average the Na count over exactly 5000 steps
+        fix fgcmc Na gcmc 500 500 500 5 31755 1000 -3.0000 0.1 full_energy region system
+        fix avgNa all ave/time 10 100 5000 v_total_atoms file test_${N}.txt mode scalar
+        fix avgEnergy all ave/time 10 100 5000 c_thermo_pe file energy_${N}.txt mode scalar
+        run 30000
+        
+        # grab the averaged Na count and energy - this is the critical fix
+        variable cur equal f_avgNa
+        variable cur_energy equal f_avgEnergy
+        print "Current average Na count: ${cur}"
+        print "Current average energy: ${cur_energy}"
+        
+        # compute differences
+        variable diff equal abs(${cur}-${prev})
+        variable energy_diff equal abs(${cur_energy}-${prev_energy})
+        print "Difference from previous Na count: ${diff}"
+        print "Difference from previous energy: ${energy_diff} eV"
+        
+        # Check for convergence (both criteria must be satisfied)
+        if "${diff} < 2.0 && ${energy_diff} < 5.0" then &
+            "region system delete" &
+            "unfix avgNa" &
+            "unfix avgEnergy" &
+            "unfix fgcmc" &
+            "jump SELF end_loop"
+    	print "Converged! Na: cur=${cur} prev=${prev} diff=${diff} | Energy: cur=${cur_energy} prev=${prev_energy} diff=${energy_diff}" 
+        
+        # otherwise store and repeat
+        variable prev equal ${cur}
+        variable prev_energy equal ${cur_energy}
+        unfix fgcmc
+        unfix avgNa
+        unfix avgEnergy
+        region system delete
+        next M
+        jump SELF inner_loop
+        
+    label end_loop
+        print "=== Finished at iteration $M with |ΔN| = ${diff} (<2.0) and |ΔE| = ${energy_diff} (<5.0 eV) ==="
+    unfix mynpt1
+    unfix recenter
+    unfix logAtoms
+    unfix bias
+    write_data ${T}_loop_bias_${N}.data
+next N
+jump SELF bias_loop

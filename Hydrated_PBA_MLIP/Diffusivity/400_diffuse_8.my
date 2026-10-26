@@ -1,0 +1,104 @@
+# 1) Initialization
+units metal
+boundary p p p
+atom_style atomic
+variable T equal 400
+variable Na equal 16
+variable O equal 32
+read_data  400K_diffuse_test.data
+reset_timestep 0
+mass 1 12.0107  # C
+mass 2 54.938049  # Mn
+mass 3 55.845  # Fe
+mass 4 14.0067  # N
+mass 5 22.98977  # Na
+mass 6 15.9994  # O
+mass 7 1.00794  # H
+variable seed index 15393
+
+# 3) Simulation settings
+group O type 6
+group PB type 1 2 3 4
+group H2O type 6 7
+group Na type 5
+group N type 4
+pair_style mlip load_from=./MTP/curr_20_cfg_r02_70.almtp
+pair_coeff  * *
+
+# check deleted atoms
+delete_atoms overlap 0.1 all all
+
+# 4) Visualization
+dump dump all custom 1000 400_diffusion_20_r02_70/dump.400_diffuse_8.trj id type x y z
+restart 50000 400_diffusion_20_r02_70/400_diffusion_8_restart
+log 400_diffusion_20_r02_70/400_diffusion_8.log
+
+# 5) Run
+reset_atoms id sort yes
+neighbor        2 bin
+neigh_modify    every 5 delay 5 check yes
+
+velocity all create ${T} ${seed} mom yes rot yes dist gaussian
+#compute_modify thermo_temp dynamic yes
+compute ctNa Na temp
+compute cth2o H2O temp
+compute ctPB PB temp
+compute_modify ctNa dynamic/dof yes
+compute_modify cth2o dynamic/dof yes
+compute_modify ctPB dynamic/dof yes
+variable dt equal 0.0005 
+
+variable xlo_init equal xlo+0.5
+variable xhi_init equal xhi-0.5
+variable ylo_init equal ylo+0.5
+variable yhi_init equal yhi-0.5
+variable zlo_init equal zlo+0.5
+variable zhi_init equal zhi-0.5
+variable xy_init equal xy
+variable xz_init equal xz
+variable yz_init equal yz
+region system prism ${xlo_init} ${xhi_init} ${ylo_init} ${yhi_init} ${zlo_init} ${zhi_init} ${xy_init} ${xz_init} ${yz_init}
+
+fix mynpt1 all npt temp ${T} ${T} $(200.0*dt) tri 1 1 $(2000.0*dt)
+#fix fgcmc Na gcmc 2000 0 2000 5 65869 ${T} -0 0.1 full_energy region system
+fix 1 all recenter INIT INIT INIT
+timestep 0.0005
+thermo 500
+thermo_style custom step temp etotal press vol
+run 50000
+
+#unfix fgcmc
+
+compute myRDF all rdf 100 1 3 1 4 4 2 4 5 2 3 6 5 6 7
+fix rdf_output all ave/time 50 20 4000 c_myRDF[*] file 400_diffusion_20_r02_70/400_diffusion_8.rdf mode vector
+compute ONacoord O coord/atom cutoff 2.4 group Na
+compute NaNcoord Na coord/atom cutoff 3.3 group N
+dump ONa_dump O custom 4000 400_diffusion_20_r02_70/400K_ONa_coord_16_32.txt id type c_ONacoord
+dump NaN_dump Na custom 4000 400_diffusion_20_r02_70/400K_NaN_coord_16_32.txt id type c_NaNcoord
+run 12000
+
+write_data 400_diffusion_20_r02_70/400K_Na_16_O_32.data
+write_dump all custom 400_diffusion_20_r02_70/400K_Na_16_O_32.dump id type x y z
+
+unfix rdf_output
+undump ONa_dump
+undump NaN_dump
+uncompute myRDF
+uncompute ONacoord
+uncompute NaNcoord
+
+compute msd_h2o H2O msd com yes
+compute msd_PB PB msd com yes
+compute msd_Na Na msd com yes
+
+fix avg_msd_PB PB ave/time 500 10 5000 c_msd_PB[1] c_msd_PB[2] c_msd_PB[3] c_msd_PB[4] file 400_diffusion_20_r02_70/400K_msd_PB_8.dat mode scalar 
+fix avg_msd_Na Na ave/time 500 10 5000 c_msd_Na[1] c_msd_Na[2] c_msd_Na[3] c_msd_Na[4] file 400_diffusion_20_r02_70/400K_msd_Na_8.dat mode scalar 
+fix avg_msd_h2o Na ave/time 500 10 5000 c_msd_h2o[1] c_msd_h2o[2] c_msd_h2o[3] c_msd_h2o[4] file 400_diffusion_20_r02_70/400K_msd_h2o_8.dat mode scalar 
+
+timestep 0.001
+thermo 500
+thermo_style custom step temp etotal press vol atoms c_msd_PB[4] c_msd_Na[4] c_msd_h2o[4]
+run 2000000
+
+# ) Save structure
+write_data 400_diffusion_20_r02_70/400K_diffusion_8.data
