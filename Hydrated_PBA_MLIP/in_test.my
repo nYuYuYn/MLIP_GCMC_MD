@@ -1,0 +1,90 @@
+# 1) Initialization
+units metal
+boundary p p p
+atom_style molecular 
+variable T equal 300
+
+# 2) System definition
+read_data  Fe_vac_removed_2.data
+#replicate 1 2 2
+mass 1 12.0107  # C
+mass 2 54.938049  # Mn
+mass 3 55.845  # Fe
+mass 4 14.0067  # N
+mass 5 22.98977  # Na
+mass 6 15.9994  # O
+mass 7 1.00794  # H
+
+variable seed index 2025888
+
+# 3) Simulation settings
+group O type 6
+group PB type 1 2 3 4
+group H2O type 6 7
+group Na type 5
+#delete_atoms group Na
+pair_style mlip load_from=curr.almtp extrapolation_control=true extrapolation_control:threshold_break=10 extrapolation_control:threshold_save=2 extrapolation_control:save_extrapolative_to=preselected_8.cfg
+pair_coeff  * *
+reset_atoms id
+molecule h2omol H2O.mol
+molecule Namol Na.mol
+variable oxygen atom "type==6"
+group oxygen dynamic all var oxygen
+variable nO equal count(oxygen)
+
+variable sodium atom "type==5"
+group sodium dynamic all var sodium
+variable nNa equal count(sodium)
+
+# 4) Visualization
+dump dump all custom 200 dump.gcmc_5.trj id type x y z
+
+# 5) Run
+#reset_atoms id sort yes
+neighbor        2 bin
+neigh_modify    every 5 delay 5 check yes
+velocity all create ${T} ${seed} mom yes rot yes dist gaussian
+#compute_modify thermo_temp dynamic yes
+compute ctNa Na temp
+compute ctH2O H2O temp
+compute ctPB PB temp
+compute_modify ctH2O dynamic/dof yes
+compute_modify ctPB dynamic/dof yes
+compute_modify ctNa dynamic/dof yes
+variable dt equal 0.0005 
+
+# ) NPT
+fix mynpt1 all npt temp ${T} ${T} $(200.0*dt) tri 1 1 $(2000.0*dt)
+timestep 0.001
+thermo 100
+thermo_style custom step temp etotal press vol v_nO v_nNa
+run 10000
+
+variable xlo equal xlo+0.1
+variable xhi equal xhi-0.1
+variable ylo equal ylo+0.1
+variable yhi equal yhi-0.1
+variable zlo equal zlo+0.1
+variable zhi equal zhi-0.1
+region system block ${xlo} ${xhi} ${ylo} ${yhi} ${zlo} ${zhi}
+
+
+fix halt_upper Na halt 2000 v_nO <= 1 error continue
+#fix fgcmc Na gcmc 2000 100 100 5 65869 600 -0.6 0.2 mol h2omol group H2O full_energy region system
+fix fgcmc H2O gcmc 2000 100 100 5 65869 600 -0.6 0.2 mol h2omol group H2O full_energy region system
+
+fix 1 all recenter INIT INIT INIT
+timestep 0.0004
+thermo 200
+run 120000
+#unfix fgcmc_na
+unfix halt_upper
+unfix fgcmc_h2o
+
+unfix mynpt1
+fix mynpt2 all npt temp ${T} ${T} $(200.0*dt) tri 1 1 $(2000.0*dt)
+thermo 200
+run 10000
+
+write_data MnFePBA_gcmc_8.data
+write_dump all atom MnFePBA_gcmc_dump_8.trj
