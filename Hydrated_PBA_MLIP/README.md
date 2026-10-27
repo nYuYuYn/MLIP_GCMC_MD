@@ -177,8 +177,8 @@ Production launchers generally follow this pattern:
 
 | File | Description |
 | --- | --- |
-| **`curr_20_cfg_r02_65.almtp`** | **Final validated MTP.** |
-| `curr.almtp` | Equivalent to `curr_20_cfg_r02_65.almtp`. |
+| **`curr_20_cfg_r02_65.almtp`** |  |
+| `curr.almtp` | **Final validated MTP.**  `curr_20_cfg_r02_65.almtp` + additional active learning. |
 | `train.cfg` | Main training set. |
 | `curr_20_cfg_r02_55.almtp` | Additional MTP variant. |
 | `curr_20_cfg_r02_60.almtp` | Additional MTP variant. |
